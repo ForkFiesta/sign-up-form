@@ -31,20 +31,55 @@ body{
     min-width: 40%;
     margin: 0;
     background-image: url("./img/grass-bg.jpg");
-    height: auto;
+    /* height: auto; */
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     
 }
 
 .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.411);
-    max-height: 200px;
+    height: 200px;
+    margin-bottom: 200px;
 
 }
-.logo-container>img{
-    
+
+.logo-container img{
+    height:100%;
+    width: 100%;
+    object-fit: contain;
+   
 }
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 234, 234);
+    padding:100px 50px 20px 50px;
+
+}
+
+.about {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    font-weight: 500;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.form-container{
+    display: flex;
+}
+
 
 
 
