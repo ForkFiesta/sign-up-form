@@ -83,18 +83,19 @@ body{
 .form-container {
     background-color: whitesmoke;
     width: 100%;
-    padding: 25px 100px 20px 50px;
+    padding: 25px 100px 40px 50px;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
 .form-container form{
     display: flex;
     flex-direction: row;
-    border: 1px solid blue;
     gap: 50px;
+    
 }
 
 
-.left-form {
+.left-form, .right-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -107,10 +108,7 @@ body{
     align-items: baseline;
 }
 
-.right-form {
-    display: flex;
-    flex-direction: column;
-}
+
 
 #legend{
     font-size: 1.5rem;
@@ -120,6 +118,30 @@ body{
 .field {
     width: 300px;
     height:25px;
+}
+
+
+.final-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 40px;
+    padding-left: 50px;
+    padding-top: 50px;
+    
+}
+
+
+.button-container button {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #596D48;
+    border-radius: 10px;
+}
+
+
+input.password:invalid, input.confirm_password:invalid{
+    outline:2px solid red;
 }
 
 
