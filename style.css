@@ -115,7 +115,7 @@ body{
     margin-bottom: 20px;
 }
 
-.field {
+.field, .password {
     width: 300px;
     height:25px;
 }
@@ -140,7 +140,7 @@ body{
 }
 
 
-input.password:invalid, input.confirm_password:invalid{
+input.password:invalid{
     outline:2px solid red;
 }
 
