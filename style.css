@@ -63,12 +63,14 @@ body{
     display: flex;
     flex-direction: column;
     background-color: rgb(234, 234, 234);
+    margin: 0 auto;
     
 
 }
 
 .about {
     font-size: 1.5rem;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,8 +84,8 @@ body{
 
 .form-container {
     background-color: whitesmoke;
-    width: 100%;
-    padding: 25px 100px 40px 50px;
+    width: auto;
+    padding: 25px 0px 40px 50px;
     box-shadow: 0 4px 2px -2px gray;
 }
 
@@ -140,8 +142,18 @@ body{
 }
 
 
-input.password:invalid{
+.invalid{
     outline:2px solid red;
+    
+}
+
+.error{
+    color: red;
+    margin-top: 10px;
+}
+
+.match{
+    color:green;
 }
 
 
